@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link href="./water.min.css" rel="stylesheet" />
+        <title>RPE chart version converter</title>
+    </head>
+    <body>
+        <h1>RPE chart version converter</h1>
+        <p>convert RPE chart to older version or minify chart file.</p>
+        <hr />
+
+        <div><label>1. Select a RPE chart file (*.json): <input id="file-select" type="file" accept="application/json,text/json,.json" /></label></div>
+        <div>RPE chart version: <span id="chart-version">Unknown</span></div>
+        <hr />
+
+        <div>
+            <label>
+                2. Select target RPE versoin: 
+                <select id="target-version" disabled>
+                    <option value="99999" selected disabled>-Select a target version-</option>
+                    <option value="113">113 (v1.2 or newer)</option>
+                    <option value="105">105 (v1.1)</option>
+                    <option value="100">100 (v1.0 or older)</option>
+                </select>
+            </label>
+        </div>
+        <hr />
+
+        <div><label>3. Minify chart file: <input id="minify-chart" type="checkbox" /></label></div>
+        <hr />
+
+        <button id="save" disabled>Save</button>
+
+        <hr />
+        Made by MisaLiu<br />
+        Style by <a href="https://github.com/kognise/water.css" target="_blank">water.css</a>
+        
+
+        <script src="./script.js"></script>
+    </body>
+</html>
